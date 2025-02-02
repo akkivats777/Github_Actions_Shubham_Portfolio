@@ -51,7 +51,7 @@ Click Save.
 Go to S3 Console → Bucket → Permissions → Bucket Policy.
 
 Add the following policy to make all objects publicly accessible:
-
+```
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -63,7 +63,7 @@ Add the following policy to make all objects publicly accessible:
     }
   ]
 }
-
+```
 Replace <bucket-name> with your actual S3 bucket name.
 
 🎉 Your Portfolio is Live!
