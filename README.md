@@ -6,25 +6,25 @@ This guide provides step-by-step instructions to deploy a portfolio website on A
 
 ### 1. Create an S3 Bucket Accessible Publicly
 
-To host your portfolio on S3, follow these steps:
+#### To host your portfolio on S3, follow these steps:
 
-🔹 Set AWS Secrets in GitHub
+- 🔹 Set AWS Secrets in GitHub
 
-Create Access Keys in your AWS account.
+#### Create Access Keys in your AWS account.
 
-Go to GitHub Repository Settings:
+- Go to GitHub Repository Settings:
 
-Navigate to Security → Secrets and Variables.
+- Navigate to Security → Secrets and Variables.
 
-Go to Actions → New Repository Secret.
+- Go to Actions → New Repository Secret.
 
-Add the following secrets:
+##### Add the following secrets:
 
-AWS_ACCESS_KEY_ID
+- AWS_ACCESS_KEY_ID
 
-AWS_SECRET_ACCESS_KEY
+- AWS_SECRET_ACCESS_KEY
 
-Click Add Secret for each.
+#### Click Add Secret for each.
 
 ### 2. Update the Bucket Name in the Code
 
@@ -36,21 +36,22 @@ Once the pipeline is executed, it will sync your GitHub repository code to the S
 
 ### 4. Deploy S3 Bucket Code
 
-🌐 Enable Static Website Hosting
+#### 🌐 Enable Static Website Hosting
 
-Go to S3 Console → Bucket → Properties.
+- Go to S3 Console → Bucket → Properties.
 
-Scroll to Static Website Hosting and enable it.
+- Scroll to Static Website Hosting and enable it.
 
-Set Index Document to index.html.
+- Set Index Document to index.html.
 
-Click Save.
+- Click Save.
 
-🔓 Update Bucket Policy for Public Access
+#### 🔓 Update Bucket Policy for Public Access
 
-Go to S3 Console → Bucket → Permissions → Bucket Policy.
+- Go to S3 Console → Bucket → Permissions → Bucket Policy.
 
-Add the following policy to make all objects publicly accessible:
+#### Add the following policy to make all objects publicly accessible:
+
 ```
 {
   "Version": "2012-10-17",
@@ -64,7 +65,8 @@ Add the following policy to make all objects publicly accessible:
   ]
 }
 ```
-Replace <bucket-name> with your actual S3 bucket name.
+
+#### Replace <bucket-name> with your actual S3 bucket name.
 
 🎉 Your Portfolio is Live!
 
