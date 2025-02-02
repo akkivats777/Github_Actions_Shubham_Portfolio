@@ -4,7 +4,7 @@ This guide provides step-by-step instructions to deploy a portfolio website on A
 
 🚀 Steps to Deploy
 
-1. Create an S3 Bucket Accessible Publicly
+### 1. Create an S3 Bucket Accessible Publicly
 
 To host your portfolio on S3, follow these steps:
 
@@ -26,15 +26,15 @@ AWS_SECRET_ACCESS_KEY
 
 Click Add Secret for each.
 
-2. Update the Bucket Name in the Code
+### 2. Update the Bucket Name in the Code
 
 Ensure that your GitHub Actions workflow or deployment script has the correct S3 bucket name.
 
-3. Run the Pipeline
+### 3. Run the Pipeline
 
 Once the pipeline is executed, it will sync your GitHub repository code to the S3 bucket.
 
-4. Deploy S3 Bucket Code
+### 4. Deploy S3 Bucket Code
 
 🌐 Enable Static Website Hosting
 
