@@ -8,7 +8,7 @@ This guide provides step-by-step instructions to deploy a portfolio website on A
 
 #### To host your portfolio on S3, follow these steps:
 
-- 🔹 Set AWS Secrets in GitHub
+- Set AWS Secrets in GitHub
 
 #### Create Access Keys in your AWS account.
 
